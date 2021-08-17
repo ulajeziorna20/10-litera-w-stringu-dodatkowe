@@ -19,18 +19,20 @@
 // }
 
 
-// const countingLetters = (string, letter) => {
+const countingLetters = (string, letter) => {
 
 
-//     let rgxp = new RegExp(letter, "g");
-//     let count = string.match(rgxp).length;
+    let rgxp = new RegExp(letter, "g");
 
-//     return count;
-// }
+    let stringToLowerCase = string.toLowerCase();
+    let count = stringToLowerCase.match(rgxp).length;
 
-// console.log(countingLetters(`Szkoła Programowania Akademia 108`, `a`));
-// console.log(countingLetters(`Szkoła Programowania Akademia 108`, `o`));
-// console.log(countingLetters(`Szkoła Programowania Akademia 108`, `r`));
+    return count;
+}
+
+console.log(countingLetters(`Szkoła Programowania Akademia 108`, `a`));
+console.log(countingLetters(`Szkoła Programowania Akademia 108`, `o`));
+console.log(countingLetters(`Szkoła Programowania Akademia 108`, `r`));
 
 
 
